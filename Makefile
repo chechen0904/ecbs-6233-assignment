@@ -1,5 +1,9 @@
 STATA = stata-se -b do
 
+results/regression_analysis.rtf: code/4_analysis.do data/processed-data/cleaned-data.dta
+	mkdir -p $(dir $@)
+	$(STATA) $^ $@
+
 results/summarize_table.txt: code/3_check_summarize.do data/processed-data/cleaned-data.dta
 	mkdir -p $(dir $@)
 	$(STATA) $^ $@
