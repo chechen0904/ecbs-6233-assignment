@@ -1,6 +1,6 @@
 STATA = stata-se -b do
 
-results/summarize.doc: code/3_check_summarize.do data/processed-data/cleaned-data.dta
+results/summarize_table.txt: code/3_check_summarize.do data/processed-data/cleaned-data.dta
 	mkdir -p $(dir $@)
 	$(STATA) $^ $@
 
@@ -16,3 +16,4 @@ install:
 	mkdir -p data/processed-data
 	mkdir -p results
 	stata-se -b ssc install outreg2, replace
+	stata-se -b ssc install estout, replace
