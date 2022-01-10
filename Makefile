@@ -1,5 +1,9 @@
 STATA = stata-se -b do
 
+results/summarize.doc: code/3_check_summarize.do data/processed-data/cleaned-data.dta
+	mkdir -p $(dir $@)
+	$(STATA) $^ $@
+
 data/processed-data/cleaned-data.dta: code/2_clean_data.do data/processed-data/merged-data.dta
 	mkdir -p $(dir $@)
 	$(STATA) $^ $@
@@ -11,3 +15,4 @@ data/processed-data/merged-data.dta: code/1_import_and_merge_data.do data/raw-da
 install:
 	mkdir -p data/processed-data
 	mkdir -p results
+	stata-se -b ssc install outreg2, replace
