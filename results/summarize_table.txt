@@ -1,0 +1,20 @@
+Decriptive statistics					
+	(1)	(2)	(3)	(4)	(5)
+VARIABLES	N	mean	sd	min	max
+					
+pline	32,901	2.050	1.198	1	14
+education_level	32,901	3.807	1.868	1	9
+total_income	32,901	116,479	238,409	-4.950e+06	5.550e+06
+total_consump	32,901	77,406	95,578	840	3.435e+06
+total_asset	32,901	1.363e+06	2.515e+06	-160,819	5.486e+07
+total_debt	26,641	91,091	384,103	0	2.024e+07
+investment_risk_preference	32,894	1.606	0.673	1	3
+happiness	32,901	0.717	0.450	0	1
+female	32,901	0.505	0.500	0	1
+age	32,901	48.09	17.91	3	117
+age2	32,901	2,633	1,799	9	13,689
+rural_household_registration	32,901	0.461	0.498	0	1
+work_in_SOE	32,901	0.123	0.328	0	1
+financial_industry	32,901	0.0153	0.123	0	1
+unemployment	32,901	0.243	0.429	0	1
+					
