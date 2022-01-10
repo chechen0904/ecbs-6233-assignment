@@ -7,7 +7,6 @@ when the household member has a high investment risk preference,
 2 for a medium investment risk preference as well as 
 1 for a low investment risk preference or risk aversion.*/
 recode h3104 (1=3)(2=3)(3=2)(4=1)(5=1)(6=2), gen(investment_risk_preference)
-drop if investment_risk_preference == .
 
 /*Generate a dummy variable for happiness. 
 The variables are derived from a question on the questionnaire "Do you feel happy now?". 
@@ -66,11 +65,8 @@ keep hhid pline investment_risk_preference happiness female age age2 family_memb
 education_level CPC_member rural_household_registration work_in_SOE financial_industry ///
 unemployment total_income total_consump total_asset total_debt
 
-*Delete the missing values
-nmissing
-egen mis = rowmiss(_all)
-drop if mis
-drop mis
+*Drop the missing values
+missings dropobs, force
 
 *Adding the label to the variable
 label var hhid "ID for each household"
