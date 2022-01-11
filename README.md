@@ -50,5 +50,5 @@ Note: The above commands should run from the root of the project folder.
 
 - Li Gan & Zhichao Yin & Jijun Tan, 2016. "Report on the Development of Household Finance in Rural China (2014)," Springer Books, Springer, edition 1, number 978-981-10-0409-4, December.
 
-## Contact me
+# Contact me
 - Email: chen_che@student.ceu.edu
