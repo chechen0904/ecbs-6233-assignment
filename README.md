@@ -12,7 +12,7 @@ Welcome! This is the assignment repository for the course of Empirical Research 
 The author of the manuscript have legitimate access to and permission to use the data used in this manuscript.
 
 ## Details about this assignment
-I chose track2, and in this assignment I want to study on the effect of happiness on household risk investment preference.
+I chose track2, and in this assignment I want to study is the effect of happiness on household risk investment preference.
 
 # Data
 ## Source of the data
@@ -44,6 +44,9 @@ Note: The above commands should run from the root of the project folder.
 - The script `code/3_check_summarize.do` checks the descriptive statistis of the variables.
 - The script `code/4_analysis.do` runs several regression equations and compare.
 - Exhibits in `results` contains all the results produced by `code/3_check_summarize.do` and `code/4_analysis.do`.
+
+# Analysis of the regression equations results
+According to the results of the three regression equations (check `results/regression_analysis.rtf`), the absolute value of the coefficient on happiness is less than 0.01 and the p-value is not significant. This indicates that the effect of happiness on household risk investment preference is not statistically significant.
 
 # Reference
 - Survey and Research Center for China Household Finance, SWUFE. 2019. "China Household Finance Survey (CHFS 2017 dta subset) [data set]" Available at http://chfs.swufe.edu.cn/datas/ Last accessed January 08, 2022.
