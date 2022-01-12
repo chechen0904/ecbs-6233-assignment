@@ -17,7 +17,5 @@ data/processed-data/merged-data.dta: code/1_import_and_merge_data.do data/raw-da
 	$(STATA) $^ $@
 
 install:
-	mkdir -p data/processed-data
-	mkdir -p results
 	stata-se -b ssc install outreg2, replace
 	stata-se -b ssc install estout, replace
