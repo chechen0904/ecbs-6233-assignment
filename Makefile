@@ -16,6 +16,10 @@ data/processed-data/merged-data.dta: code/1_import_and_merge_data.do data/raw-da
 	mkdir -p $(dir $@)
 	$(STATA) $^ $@
 
+# $^ and $@ are automatic variables 
+# $^  means all sources used by the recipe 
+# $@ means the target being created by the recipe 
+
 install:
 	stata-se -b ssc install outreg2, replace
 	stata-se -b ssc install estout, replace
