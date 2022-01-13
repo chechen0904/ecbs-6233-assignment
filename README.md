@@ -14,6 +14,31 @@ The author of the manuscript have legitimate access to and permission to use the
 ## Details about this assignment
 I chose track2, and in this assignment I want to study is the effect of happiness on household risk investment preference.
 
+## Repository organization
+```
+ecbs-6233-assignment                  # Project folder
+├── code                              #   Stata code
+|   ├── 1_import_and_merge_data.do    
+|   ├── 2_clean_data.do               
+|   ├── 3_check_summarize.do
+|   ├── 4_analysis.do
+├── data                              #   Data folder
+|   ├── raw-data                      #     Raw datas: 2017 CHFS  
+|       ├── hh.dta 
+|       ├── ind.dta
+|       ├── master.dta
+|   ├── processed-data                #     Processed data from running .do files 
+|       ├── cleaned-data.dta
+|       ├── merged-data.dta
+├── results                           #   Output files
+|   ├── regression_analysis.rtf       #     Regression results (rtf)  
+|   ├── summarize_table.txt           #     Variables descriptive statistics (txt)
+├── .gitignore 
+├── Makefile 
+└── README.md                         
+```
+The organization of this repository are shown above. Due to some processed data are large, like `merged-data.dta`, I didn't upload them, so you cannot find the `processed-data` folder.
+
 # Data
 ## Source of the data
 > [Data source link](http://chfs.swufe.edu.cn/datas/ "Data source link")
